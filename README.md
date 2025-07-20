@@ -83,7 +83,5 @@ Modul ini menunjukkan implementasi dasar 3D menggunakan **gluPerspective**, **gl
 
 ```bash
 pip install PyOpenGL PyOpenGL_accelerate pygame
-pip install numpy pandas scikit-learn
-pip install seaborn
 python 2d.py
 python 3d.py
