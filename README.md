@@ -26,25 +26,56 @@ Aplikasi 2D ini memungkinkan pengguna untuk menggambar objek grafika dasar serta
 
 ### 🎨 Warna & Ketebalan
 - Pilih warna objek: **Merah (R)**, **Hijau (G)**, **Biru (B)**
-- Atur ketebalan garis dengan tombol `+` dan `-`
+- Atur ketebalan garis dengan tombol + dan -
 
 ### 🛠️ Transformasi Geometri
-- Translasi: tekan `T`  
-- Rotasi: tekan `Y`  
-- Skala: tekan `U`  
+- Translasi: tekan T  
+- Rotasi: tekan Y  
+- Skala: tekan U  
 🔁 Gunakan **arrow keys, Z/X, atau N/M** untuk mengubah posisi, rotasi, dan ukuran.
 
 ### 🪟 Windowing & Clipping
-- Tekan `Q` untuk atur window dengan klik 2 titik (sebagai batas)
-- Geser window: tombol `W`, `A`, `S`, `D`
+- Tekan Q untuk atur window dengan klik 2 titik (sebagai batas)
+- Geser window: tombol W, A, S, D
 - Objek:
   - Di dalam window akan berubah warna menjadi **hijau**
   - Di luar window akan **terklip otomatis** menggunakan algoritma **Cohen-Sutherland**
 
 ### 🔄 Fitur Tambahan
-- Hapus semua objek: `Delete`  
-- Batalkan transformasi: `C`  
-- Keluar dari aplikasi: `Esc`
+- Hapus semua objek: Delete  
+- Batalkan transformasi: C  
+- Keluar dari aplikasi: Esc
+
+---
+
+## 📄 Modul B – Grafika 3D Interaktif dengan PyOpenGL
+
+### 📌 Deskripsi
+Program ini menampilkan objek **3D (Kubus)** dengan pencahayaan, rotasi, serta interaksi kamera.  
+Modul ini menunjukkan implementasi dasar 3D menggunakan **gluPerspective**, **gluLookAt**, dan pencahayaan.
+
+---
+
+## 🎯 Fitur-Fitur Utama
+
+### 🧊 Objek 3D
+- Menampilkan **Kubus 3D** secara interaktif
+
+### 💡 Pencahayaan
+- Implementasi 3 jenis pencahayaan:
+  - **Ambient Light** – Cahaya menyeluruh
+  - **Diffuse Light** – Cahaya menyebar dari sumber tertentu
+  - **Specular Light** – Cahaya pantulan (kilau/glossy)
+
+### 🎥 Kamera & Perspektif
+- Kamera diatur menggunakan gluLookAt untuk melihat objek dari sudut menyerong
+- Proyeksi menggunakan gluPerspective untuk menciptakan efek kedalaman (depth)
+
+### 🎮 Interaksi 3D
+- Rotasi objek: tombol Arrow  
+- Zoom: tombol + dan -  
+- Reset kamera: tekan R  
+- Keluar dari aplikasi: Esc
 
 ---
 
@@ -53,3 +84,4 @@ Aplikasi 2D ini memungkinkan pengguna untuk menggambar objek grafika dasar serta
 ```bash
 pip install PyOpenGL PyOpenGL_accelerate pygame
 python 2d.py
+python 3d.py
